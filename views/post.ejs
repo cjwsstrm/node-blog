@@ -8,10 +8,10 @@
     <title>POST_TITLE | Node.js Blog</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <style>
-      body {
-          padding-top: 20px;
-          padding-bottom: 20px;
-      }
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -19,11 +19,11 @@
     <div class="container">
         <%- include('partials/navbar') %>
         <div>
-            <h2>POST TITLE</h2>
-            <p>by <a href="#">POST_AUTHOR</a></p>
+          <h2><%= title %></h2>
+          <p>by <a href="#"><%= author %></a></p>
 
-            <p>POST CONTENT</p>
-            <hr>
+          <p><%= body %></p>
+          <hr>
         </div>
         <%- include('partials/footer') %>
     </div>
